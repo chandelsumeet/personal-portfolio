@@ -1,0 +1,27 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-rows: 400px 100px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 20px;
+}
+.image-card img {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  height: auto;
+  transition: 0.3s all;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgb(0 0 0 / 18%);
+  object-fit: cover;
+}
+.image-card:hover img {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 10px 10px 8.5px 1px rgb(0 0 0 / 30%);
+}
