@@ -3,6 +3,8 @@
   max-height: 500px;
   display: block;
   border-radius: 29px;
+  width: 366px;
+  height: 434px;
 }
 .profile-content h1 {
   font-size: 80px;
@@ -34,7 +36,7 @@ h3 {
 .skill-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 200px 200px 200px;
   justify-items: center;
   align-content: center;
   align-items: center;
