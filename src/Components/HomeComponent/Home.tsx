@@ -8,7 +8,11 @@ import htmlImg from "../../assests/images/html-logo.png";
 import skillSvg from "../../assests/images/skills-svg.svg";
 import twitter from "../../assests/images/twitter-logo.jpg";
 import "./Home.css";
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(() => {
+    document.title = "home";
+  }, []);
   return (
     <>
       <div className="profile-card">
@@ -114,7 +118,7 @@ const Home = () => {
         <div className="heading-skills">
           <p>Want To Know More About Me</p>
         </div>
-        <a href="../../assests/resume/Sumeet_React_YOE1.pdf" download>
+        <a href="resume/resume.pdf" download>
           <img src={resumeImg} alt="" />
         </a>
       </div>

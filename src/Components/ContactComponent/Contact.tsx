@@ -1,7 +1,11 @@
 import React from "react";
 import imgSrc from "../../assests/images/waving-hand-emoji.png";
 import "./Contact.css";
+import { useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact";
+  }, []);
   return (
     <div className="contact-section">
       <h1>

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../assests/images/flipkart-image.jpg";
 import twitter from "../../assests/images/twitter.jpg";
 import movieLogo from "../../assests/images/movie-logo.png";
 import "./Project.css";
+import { Helmet } from "react-helmet";
 const Project = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Project</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <h1>Here's some of my work</h1>
       <div className="grid-container">
         <div className="project-container">
